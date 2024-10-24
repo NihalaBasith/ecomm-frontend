@@ -6,6 +6,22 @@
   height: 40vmin;
   pointer-events: none;
 }
+.wrapper {
+  display: flex; /* Makes the nav items align horizontally */
+  gap: 15px; /* Adds space between nav items */
+}
+
+.wrapper a {
+  color: white; /* Sets the text color */
+  text-decoration: none; /* Removes underline from links */
+  padding: 10px 15px; /* Adds padding around the links */
+  border-radius: 5px; /* Rounds the corners of the links */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.wrapper a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
